@@ -18,8 +18,13 @@ public class Exc8 {
             i++;
 
         }
+        boolean achouUm = false;
         for (int k = numeroBinario.length-1; k >= 0; k--) {
-        System.out.print(numeroBinario[k]);
+            if(!achouUm)
+                achouUm = numeroBinario[k] == 1;
+            } else {
+                System.out.print(numeroBinario[k]);
+            }
 
         leitor.close();
     }

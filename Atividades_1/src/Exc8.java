@@ -26,10 +26,8 @@ public class Exc8 {
             if (achouUm) {
                 System.out.print(numeroBinario[k]);
             }
-
-            leitor.close();
         }
-
+        leitor.close();
     }
 }
 

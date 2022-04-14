@@ -6,33 +6,36 @@ public class Exc9 {
         // int numeroBinario[] = new int[10];
         int numeroDecimal = 0;
         int num;
-        int i = 0;
+        // int i = 0;
 
         Scanner leitor = new Scanner(System.in);
+
+        System.out.print("Informe um número binário: ");
         num = leitor.nextInt();
 
         char[] caracteres = Integer.toString(num).toCharArray();
         int[] numeroBinario = new int[caracteres.length];
-        
+
         int j = 0;
         for (char numerosBinario : caracteres) {
-           
+
             numeroBinario[j] = Character.getNumericValue(numerosBinario);
-            System.out.print(numeroBinario[j]);
+            //System.out.print(numeroBinario[j]);
             j++;
         }
 
-        for (i = numeroBinario.length-1; i >= 0; i--) {
-            numeroDecimal += (numeroBinario[i] * Math.pow(2, numeroBinario.length-1));
-            System.out.println(numeroBinario[i]);
-
+        for (int i = 0; i <= numeroBinario.length - 1;) {
+            for (int k = numeroBinario.length - 1; k >= 0; k--) {
+                numeroDecimal += (numeroBinario[i] * Math.pow(2, k));
+                //System.out.println(numeroBinario[i]);
+                i++;
+            }
         }
 
-        System.out.println(numeroDecimal);
+        System.out.println("O número decimal correspondente é: " + numeroDecimal);
         leitor.close();
 
         /*
-         * 5
          * Scanner leitor = new Scanner(System.in);
          * String entrada = leitor.next();
          * int potencia = 0;

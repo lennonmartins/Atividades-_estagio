@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Exc26 {
+public class Exc27 {
     public static void main(String[] args) {
-        int numero = 4;
-        int fator = 1;
-        int resultado = 1;
-        int contador = 1;
+        long numero = 4;
+        long fator = 1;
+        long resultado = 1;
+        long contador = 1;
 
         Scanner leitor = new Scanner(System.in);
         System.out.print("Informe o número fatorial: ");

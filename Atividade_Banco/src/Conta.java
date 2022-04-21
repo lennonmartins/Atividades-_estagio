@@ -3,7 +3,7 @@ public class Conta {
     int numeroConta;
     String agencia;
     double saldo;
-    String dataAbertura;
+    Data dataAbertura;
     double novoSaldo;
     double rendimento;
     String texto;
@@ -30,5 +30,7 @@ public class Conta {
         texto = "Titula: " + this.nomeTitular + " / Agencia "+ agencia + " / Saldo: " +  String.format("%.2f", saldo);
         return texto;
     }
+
+    
 
 }

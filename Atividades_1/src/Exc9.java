@@ -12,9 +12,9 @@ public class Exc9 {
 
         System.out.print("Informe um número binário: ");
         num = leitor.nextInt();
-
         char[] caracteres = Integer.toString(num).toCharArray();
         int[] numeroBinario = new int[caracteres.length];
+
 
         int j = 0;
         for (char numerosBinario : caracteres) {

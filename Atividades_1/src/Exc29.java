@@ -16,8 +16,9 @@ public class Exc29 {
             } else {
                 numero1 = 3 * numero1 + 1;
             }
-            System.out.print(numero1 + ", ");
+            System.out.print(numero1 + " -> ");
         }
+        System.out.println("fim.");
         
         leitor.close();
     }
